@@ -30,7 +30,7 @@ services:
       - mysql # 「mysql」の後で起動
 
   java:
-    image: openjdk:21
+    image: openjdk:15
     container_name: java
     env_file:
       - ./mysql/db.env # DB接続用
