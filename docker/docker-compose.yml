@@ -12,23 +12,6 @@ services:
     ports:
       - 3306:3306
 
-  dbclient:
-    image: phpmyadmin/phpmyadmin
-    container_name: dbclient
-    environment:
-      - PMA_ARBITRARY=1 # 任意のサーバーへの接続を許可
-      - PMA_HOST=mysql # 接続先ホスト名　ここではdbサーバーのコンテナ名を指定
-      - PMA_USER=dev_usr # MySQLの設定と合わせておく
-      - PMA_PASSWORD=dev_usr_pass # MySQLの設定と合わせておく
-    links:
-      - mysql
-    ports:
-      - 4200:80
-    volumes:
-      - ./dbclient/sessions:/sessions
-    depends_on:
-      - mysql # 「mysql」の後で起動
-
   java:
     image: openjdk:15
     container_name: java
