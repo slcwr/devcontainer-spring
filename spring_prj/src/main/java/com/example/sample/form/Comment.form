@@ -1,0 +1,17 @@
+package com.example.sample.form;
+
+import lombok.Data;
+
+@Data
+public class CommentForm {
+
+    /**
+     * comment名前の保存
+     */
+    private String name;
+
+    /**
+     * commentテキストの保存
+     */
+    private tring text;
+}

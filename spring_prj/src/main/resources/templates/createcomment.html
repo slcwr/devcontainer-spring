@@ -1,0 +1,17 @@
+<!--sample.html-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>コメント追加</title>
+	</head>
+	<body>
+		<h2><span th:text="${message}"></span></h2>
+			<form th:action="@{/addcomment}" method="get"> 
+			ID：<input type="number" name="id">
+			名前：<input type="text" name="name">
+            コメント：<input type="text" name="text">
+			<input type="submit"value="送信">
+			</form>
+	</body>
+</html>

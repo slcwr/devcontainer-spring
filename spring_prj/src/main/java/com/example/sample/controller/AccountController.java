@@ -15,7 +15,7 @@ public class AccountController {
     AccountService accountService;
 
     @RequestMapping(method = RequestMethod.GET)
-    List<AccountEntity> getTweet() {
+    List<AccountEntity> getAccount() {
         return accountService.getAccount();
     }
 }
