@@ -1,4 +1,4 @@
-FROM mysql:5.7
+FROM wanminny/5.7.30-linux-arm64v8
 
 EXPOSE 3306
 
