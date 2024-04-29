@@ -9,7 +9,8 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = '17'
+targetCompatibility = '17'
 
 configurations {
 	compileOnly {
@@ -37,6 +38,7 @@ dependencies {
 	implementation('org.webjars:jquery:3.5.1')
     implementation('org.webjars:bootstrap:4.5.3')
     implementation('org.webjars:webjars-locator:0.40')
+	//runtime("org.springframework.boot:spring-boot-properties-migrator")
 }
 test {
 	useJUnitPlatform()

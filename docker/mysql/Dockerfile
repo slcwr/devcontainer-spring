@@ -7,3 +7,8 @@ COPY ./my.cnf /etc/mysql/my.cnf
 RUN chmod 644 /etc/mysql/my.cnf
 
 COPY ./sql_init /docker-entrypoint-initdb.d
+
+
+FROM openjdk:17
+
+RUN microdnf install findutils

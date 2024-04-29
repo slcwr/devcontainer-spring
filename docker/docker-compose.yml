@@ -12,7 +12,7 @@ services:
       - 3306:3306
 
   java:
-    image: openjdk:15
+    image: openjdk:17
     container_name: java
     env_file:
       - ./mysql/db.env # DB接続用
